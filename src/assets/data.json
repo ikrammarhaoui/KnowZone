@@ -1,0 +1,476 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "HTML & CSS Fondamentaux",
+      "description": "Testez vos connaissances sur les bases du web : structure HTML et mise en forme CSS.",
+      "category": "Web",
+      "difficulty": "Facile",
+      "duration": 10,
+      "image": "🌐",
+      "published": true,
+      "createdAt": "2025-09-01",
+      "questions": [
+        {
+          "id": 1,
+          "type": "qcm",
+          "question": "Quelle balise HTML est utilisée pour créer un lien hypertexte ?",
+          "options": ["<link>", "<a>", "<href>", "<url>"],
+          "correct": [1],
+          "explanation": "La balise <a> (anchor) est utilisée pour créer des liens hypertextes. L'attribut href définit la destination du lien."
+        },
+        {
+          "id": 2,
+          "type": "vf",
+          "question": "CSS signifie 'Cascading Style Sheets'.",
+          "options": ["Vrai", "Faux"],
+          "correct": [0],
+          "explanation": "CSS signifie bien 'Cascading Style Sheets' (Feuilles de Style en Cascade). C'est le langage utilisé pour styliser les pages HTML."
+        },
+        {
+          "id": 3,
+          "type": "qcm",
+          "question": "Quelle propriété CSS est utilisée pour changer la couleur du texte ?",
+          "options": ["text-color", "font-color", "color", "foreground"],
+          "correct": [2],
+          "explanation": "La propriété 'color' en CSS est utilisée pour définir la couleur du texte d'un élément."
+        },
+        {
+          "id": 4,
+          "type": "multiple",
+          "question": "Lesquels sont des sélecteurs CSS valides ?",
+          "options": [".classe", "#id", "element", "@media", "*"],
+          "correct": [0, 1, 2, 4],
+          "explanation": "@media est une règle at-rule, pas un sélecteur. Les sélecteurs valides incluent les classes (.classe), les IDs (#id), les éléments et le sélecteur universel (*)."
+        },
+        {
+          "id": 5,
+          "type": "qcm",
+          "question": "Quel attribut HTML est obligatoire pour la balise <img> ?",
+          "options": ["title", "width", "alt", "src"],
+          "correct": [3],
+          "explanation": "L'attribut 'src' est obligatoire pour la balise <img> car il spécifie le chemin vers l'image à afficher. L'attribut 'alt' est fortement recommandé pour l'accessibilité."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Avancé",
+      "description": "Closures, promesses, async/await et les concepts avancés de JS.",
+      "category": "Programmation",
+      "difficulty": "Difficile",
+      "duration": 15,
+      "image": "⚡",
+      "published": true,
+      "createdAt": "2025-09-05",
+      "questions": [
+        {
+          "id": 1,
+          "type": "qcm",
+          "question": "Qu'est-ce qu'une closure en JavaScript ?",
+          "options": [
+            "Une fonction qui se ferme automatiquement",
+            "Une fonction ayant accès aux variables de sa portée externe",
+            "Un objet verrouillé",
+            "Une boucle infinie"
+          ],
+          "correct": [1],
+          "explanation": "Une closure est une fonction qui capture et retient l'accès aux variables de sa portée lexicale externe, même après que cette portée a terminé son exécution."
+        },
+        {
+          "id": 2,
+          "type": "qcm",
+          "question": "Que retourne 'typeof null' en JavaScript ?",
+          "options": ["'null'", "'undefined'", "'object'", "'boolean'"],
+          "correct": [2],
+          "explanation": "C'est un bug historique de JavaScript : typeof null retourne 'object' alors que null est une valeur primitive. Ce comportement est maintenu pour des raisons de compatibilité."
+        },
+        {
+          "id": 3,
+          "type": "vf",
+          "question": "Les Promises en JavaScript permettent de gérer du code asynchrone.",
+          "options": ["Vrai", "Faux"],
+          "correct": [0],
+          "explanation": "Les Promises représentent une valeur qui peut être disponible maintenant, dans le futur, ou jamais. Elles sont fondamentales pour la gestion asynchrone en JavaScript moderne."
+        },
+        {
+          "id": 4,
+          "type": "qcm",
+          "question": "Quelle méthode permet de transformer un tableau avec une fonction ?",
+          "options": ["forEach()", "filter()", "map()", "reduce()"],
+          "correct": [2],
+          "explanation": "map() crée un nouveau tableau en appliquant une fonction à chaque élément. forEach() exécute une fonction sans retourner de tableau."
+        },
+        {
+          "id": 5,
+          "type": "multiple",
+          "question": "Quels sont des types primitifs en JavaScript ?",
+          "options": ["string", "object", "number", "array", "boolean"],
+          "correct": [0, 2, 4],
+          "explanation": "Les types primitifs en JavaScript sont : string, number, boolean, undefined, null, symbol et bigint. Object et Array sont des types de référence."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Algorithmes & Structures de Données",
+      "description": "Complexité, tri, recherche et structures fondamentales en informatique.",
+      "category": "Algorithmique",
+      "difficulty": "Moyen",
+      "duration": 12,
+      "image": "🧮",
+      "published": true,
+      "createdAt": "2025-09-10",
+      "questions": [
+        {
+          "id": 1,
+          "type": "qcm",
+          "question": "Quelle est la complexité temporelle du tri rapide (quicksort) en moyenne ?",
+          "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+          "correct": [1],
+          "explanation": "Le quicksort a une complexité moyenne de O(n log n). Dans le pire cas (tableau déjà trié avec mauvais pivot), elle peut être O(n²)."
+        },
+        {
+          "id": 2,
+          "type": "qcm",
+          "question": "Quelle structure de données utilise le principe LIFO ?",
+          "options": ["File (Queue)", "Pile (Stack)", "Liste chaînée", "Arbre binaire"],
+          "correct": [1],
+          "explanation": "Une pile (Stack) utilise le principe LIFO (Last In, First Out) : le dernier élément ajouté est le premier retiré. Une file utilise FIFO."
+        },
+        {
+          "id": 3,
+          "type": "vf",
+          "question": "Un arbre binaire de recherche a toujours O(log n) pour la recherche.",
+          "options": ["Vrai", "Faux"],
+          "correct": [1],
+          "explanation": "Faux. Un BST non équilibré peut dégénérer en liste chaînée avec une complexité O(n). Seuls les arbres équilibrés (AVL, Red-Black) garantissent O(log n)."
+        },
+        {
+          "id": 4,
+          "type": "qcm",
+          "question": "Quelle est la complexité de la recherche binaire ?",
+          "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+          "correct": [2],
+          "explanation": "La recherche binaire divise l'espace de recherche par 2 à chaque étape, donnant une complexité logarithmique O(log n). Le tableau doit être trié."
+        },
+        {
+          "id": 5,
+          "type": "multiple",
+          "question": "Lesquelles sont des structures de données linéaires ?",
+          "options": ["Tableau", "Graphe", "Liste chaînée", "Arbre", "File"],
+          "correct": [0, 2, 4],
+          "explanation": "Les structures linéaires organisent les données séquentiellement : tableau, liste chaînée, pile, file. Les arbres et graphes sont des structures non-linéaires."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Bases de Données SQL",
+      "description": "Requêtes SQL, jointures, indexation et conception de schémas relationnels.",
+      "category": "Base de données",
+      "difficulty": "Moyen",
+      "duration": 10,
+      "image": "🗄️",
+      "published": true,
+      "createdAt": "2025-09-15",
+      "questions": [
+        {
+          "id": 1,
+          "type": "qcm",
+          "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une requête ?",
+          "options": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+          "correct": [2],
+          "explanation": "WHERE filtre les lignes avant le groupage. HAVING filtre après le groupage (avec GROUP BY). ORDER BY trie les résultats."
+        },
+        {
+          "id": 2,
+          "type": "qcm",
+          "question": "Quel type de JOIN retourne toutes les lignes des deux tables ?",
+          "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+          "correct": [3],
+          "explanation": "FULL OUTER JOIN retourne toutes les lignes des deux tables, avec NULL pour les colonnes sans correspondance. INNER JOIN ne retourne que les lignes avec correspondance."
+        },
+        {
+          "id": 3,
+          "type": "vf",
+          "question": "Une clé primaire peut contenir des valeurs NULL.",
+          "options": ["Vrai", "Faux"],
+          "correct": [1],
+          "explanation": "Faux. Une clé primaire doit être unique et NOT NULL. Elle identifie de manière unique chaque enregistrement dans une table."
+        },
+        {
+          "id": 4,
+          "type": "multiple",
+          "question": "Quelles sont des fonctions d'agrégation SQL ?",
+          "options": ["COUNT()", "UPPER()", "SUM()", "AVG()", "TRIM()"],
+          "correct": [0, 2, 3],
+          "explanation": "COUNT(), SUM(), AVG(), MIN(), MAX() sont des fonctions d'agrégation qui opèrent sur des groupes de lignes. UPPER() et TRIM() sont des fonctions scalaires sur les chaînes."
+        },
+        {
+          "id": 5,
+          "type": "qcm",
+          "question": "Qu'est-ce qu'un index en base de données ?",
+          "options": [
+            "Une copie de la table",
+            "Une structure accélérant les recherches",
+            "Un type de contrainte",
+            "Une procédure stockée"
+          ],
+          "correct": [1],
+          "explanation": "Un index est une structure de données qui améliore la vitesse des opérations de recherche. En contrepartie, il ralentit légèrement les insertions/mises à jour."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Réseaux & Protocoles",
+      "description": "TCP/IP, HTTP, DNS, modèle OSI et concepts fondamentaux des réseaux informatiques.",
+      "category": "Réseaux",
+      "difficulty": "Facile",
+      "duration": 8,
+      "image": "🌍",
+      "published": true,
+      "createdAt": "2025-09-20",
+      "questions": [
+        {
+          "id": 1,
+          "type": "qcm",
+          "question": "Combien de couches comporte le modèle OSI ?",
+          "options": ["4", "5", "7", "8"],
+          "correct": [2],
+          "explanation": "Le modèle OSI (Open Systems Interconnection) comporte 7 couches : Physique, Liaison, Réseau, Transport, Session, Présentation et Application."
+        },
+        {
+          "id": 2,
+          "type": "qcm",
+          "question": "Quel protocole est utilisé pour la résolution des noms de domaine ?",
+          "options": ["HTTP", "FTP", "DNS", "SMTP"],
+          "correct": [2],
+          "explanation": "DNS (Domain Name System) traduit les noms de domaine en adresses IP. Par exemple, google.com → 172.217.x.x."
+        },
+        {
+          "id": 3,
+          "type": "vf",
+          "question": "HTTPS chiffre les données grâce au protocole SSL/TLS.",
+          "options": ["Vrai", "Faux"],
+          "correct": [0],
+          "explanation": "HTTPS (HTTP Secure) utilise SSL/TLS pour chiffrer les communications entre le client et le serveur, protégeant les données en transit."
+        },
+        {
+          "id": 4,
+          "type": "qcm",
+          "question": "Quel est le port par défaut du protocole HTTP ?",
+          "options": ["21", "22", "80", "443"],
+          "correct": [2],
+          "explanation": "HTTP utilise le port 80 par défaut. HTTPS utilise le port 443. FTP utilise le port 21. SSH utilise le port 22."
+        },
+        {
+          "id": 5,
+          "type": "multiple",
+          "question": "Lesquels sont des protocoles de la couche Transport ?",
+          "options": ["TCP", "UDP", "HTTP", "IP", "SCTP"],
+          "correct": [0, 1, 4],
+          "explanation": "TCP, UDP et SCTP opèrent à la couche Transport (couche 4) du modèle OSI. HTTP est une couche Application et IP est une couche Réseau."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Sécurité Informatique",
+      "description": "Cryptographie, attaques courantes, bonnes pratiques et sécurisation des applications.",
+      "category": "Sécurité",
+      "difficulty": "Difficile",
+      "duration": 15,
+      "image": "🔐",
+      "published": true,
+      "createdAt": "2025-09-25",
+      "questions": [
+        {
+          "id": 1,
+          "type": "qcm",
+          "question": "Qu'est-ce qu'une attaque XSS ?",
+          "options": [
+            "Une attaque par déni de service",
+            "Une injection de scripts malveillants dans des pages web",
+            "Une attaque par force brute",
+            "Un déchiffrement de hash"
+          ],
+          "correct": [1],
+          "explanation": "XSS (Cross-Site Scripting) permet à un attaquant d'injecter des scripts côté client dans les pages vues par d'autres utilisateurs, volant des données ou détournant des sessions."
+        },
+        {
+          "id": 2,
+          "type": "qcm",
+          "question": "Quel algorithme de hachage est recommandé pour les mots de passe ?",
+          "options": ["MD5", "SHA-1", "bcrypt", "Base64"],
+          "correct": [2],
+          "explanation": "bcrypt est recommandé pour les mots de passe car il intègre un salt aléatoire et est intentionnellement lent, rendant les attaques par force brute impraticables."
+        },
+        {
+          "id": 3,
+          "type": "vf",
+          "question": "SQL Injection peut permettre de contourner l'authentification.",
+          "options": ["Vrai", "Faux"],
+          "correct": [0],
+          "explanation": "Vrai. Une injection SQL classique comme \"' OR '1'='1\" dans un champ login peut court-circuiter la vérification du mot de passe et donner accès à un compte."
+        },
+        {
+          "id": 4,
+          "type": "qcm",
+          "question": "Qu'est-ce que le principe du moindre privilège ?",
+          "options": [
+            "Donner tous les droits à l'admin",
+            "Accorder uniquement les permissions nécessaires",
+            "Supprimer tous les comptes inutilisés",
+            "Chiffrer toutes les données"
+          ],
+          "correct": [1],
+          "explanation": "Le principe du moindre privilège stipule que chaque utilisateur/processus ne doit avoir que les permissions strictement nécessaires à ses fonctions, limitant les risques."
+        },
+        {
+          "id": 5,
+          "type": "multiple",
+          "question": "Lesquelles sont des bonnes pratiques de sécurité web ?",
+          "options": [
+            "Valider les entrées côté serveur",
+            "Stocker les mots de passe en clair",
+            "Utiliser HTTPS",
+            "Paramétrer les requêtes SQL",
+            "Désactiver les logs"
+          ],
+          "correct": [0, 2, 3],
+          "explanation": "Les bonnes pratiques incluent : validation côté serveur, HTTPS, requêtes paramétrées (prévention SQL injection), hachage sécurisé des mots de passe et journalisation."
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Admin",
+      "lastName": "Plateforme",
+      "email": "admin@quiz.ma",
+      "password": "Admin123",
+      "role": "admin",
+      "blocked": false,
+      "createdAt": "2025-08-01"
+    },
+    {
+      "id": 2,
+      "firstName": "Ikram",
+      "lastName": "Marhaoui",
+      "email": "ikram@example.com",
+      "password": "User1234",
+      "role": "user",
+      "blocked": false,
+      "createdAt": "2025-09-01"
+    },
+    {
+      "id": 3,
+      "firstName": "Siham",
+      "lastName": "El Mouden",
+      "email": "siham@example.com",
+      "password": "User1234",
+      "role": "user",
+      "blocked": false,
+      "createdAt": "2025-09-02"
+    },
+    {
+      "id": 4,
+      "firstName": "Youssef",
+      "lastName": "Benali",
+      "email": "youssef@example.com",
+      "password": "User1234",
+      "role": "user",
+      "blocked": false,
+      "createdAt": "2025-09-10"
+    }
+  ],
+  "scores": [
+    {
+      "id": 1,
+      "userId": 2,
+      "userName": "Ikram M.",
+      "quizId": 1,
+      "quizTitle": "HTML & CSS Fondamentaux",
+      "score": 480,
+      "correctAnswers": 5,
+      "totalQuestions": 5,
+      "timeSpent": 245,
+      "date": "2025-10-01"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "userName": "Siham E.",
+      "quizId": 2,
+      "quizTitle": "JavaScript Avancé",
+      "score": 390,
+      "correctAnswers": 4,
+      "totalQuestions": 5,
+      "timeSpent": 520,
+      "date": "2025-10-02"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "userName": "Youssef B.",
+      "quizId": 3,
+      "quizTitle": "Algorithmes & Structures de Données",
+      "score": 450,
+      "correctAnswers": 5,
+      "totalQuestions": 5,
+      "timeSpent": 380,
+      "date": "2025-10-03"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "userName": "Ikram M.",
+      "quizId": 4,
+      "quizTitle": "Bases de Données SQL",
+      "score": 420,
+      "correctAnswers": 4,
+      "totalQuestions": 5,
+      "timeSpent": 290,
+      "date": "2025-10-04"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "userName": "Siham E.",
+      "quizId": 5,
+      "quizTitle": "Réseaux & Protocoles",
+      "score": 500,
+      "correctAnswers": 5,
+      "totalQuestions": 5,
+      "timeSpent": 180,
+      "date": "2025-10-05"
+    },
+    {
+      "id": 6,
+      "userId": 4,
+      "userName": "Youssef B.",
+      "quizId": 6,
+      "quizTitle": "Sécurité Informatique",
+      "score": 360,
+      "correctAnswers": 3,
+      "totalQuestions": 5,
+      "timeSpent": 610,
+      "date": "2025-10-06"
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "userName": "Ikram M.",
+      "quizId": 2,
+      "quizTitle": "JavaScript Avancé",
+      "score": 440,
+      "correctAnswers": 4,
+      "totalQuestions": 5,
+      "timeSpent": 430,
+      "date": "2025-10-07"
+    }
+  ]
+}
